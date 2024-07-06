@@ -9,9 +9,9 @@ Tento projekt obsahuje dva Python skripty pro automatické stahování a aktuali
 Tento skript stahuje historická Forex data pro zadaný měnový pár a časový rámec.
 
 #### Použití:
-
+```bash
 python3 forex_data_downloader.py -p EURUSD -t M5
-
+```
 
 #### Argumenty:
 
@@ -30,18 +30,18 @@ python3 forex_data_downloader.py -p EURUSD -t M5
 - webdriver_manager
 
 #### Instalace potřebných nástrojů:
-
+```bash
 pip install selenium requests webdriver_manager
-
+```
 
 ### auto_update_forex_data.py
 
 Tento skript automaticky stahuje Forex data v pravidelných intervalech pomocí skriptu `forex_data_downloader.py`.
 
 #### Použití:
-
+```bash
 python3 auto_update_forex_data.py -p EURUSD -t M5
-
+```
 
 #### Argumenty:
 
@@ -61,21 +61,21 @@ python3 auto_update_forex_data.py -p EURUSD -t M5
 - forex_data_downloader.py
 
 #### Instalace potřebných nástrojů:
-
+```bash
 pip install selenium requests webdriver_manager
-
+```
 
 ## Příklad použití
 
 ### Stahování dat:
-
+```bash
 python3 forex_data_downloader.py -p EURUSD -t M5
-
+```
 
 ### Automatická aktualizace dat:
-
+```bash
 python3 auto_update_forex_data.py -p EURUSD -t M5
-
+```
 
 Skript `auto_update_forex_data.py` bude každých 5 minut + 5 sekund stahovat nová data a nahrazovat stará data. Tento interval se liší podle zadaného časového rámce.
 
