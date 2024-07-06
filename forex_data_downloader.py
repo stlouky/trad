@@ -2,6 +2,16 @@
 Nápověda:
 Tento skript slouží ke stažení historických dat Forex z webu forexsb.com.
 
+Potřebné nástroje:
+    - selenium: Automatizace webového prohlížeče
+    - requests: HTTP knihovna pro Python
+    - webdriver_manager: Automatická správa chromedriveru
+    - chromedriver: Webdriver pro Google Chrome
+    - chromium-browser: Bezhlavý prohlížeč Chrome (pro Linux)
+
+Instalace nástrojů:
+    pip install selenium requests webdriver_manager
+
 Použití:
   python3 download.py -p MĚNOVÝ_PÁR -t ČASOVÝ_RÁMEC
 
@@ -14,7 +24,7 @@ Příklady použití:
     python3 download.py -p EURUSD -t M5
 
   Pro stažení dat měnového páru EUR/USD pro všechny časové rámce:
-    python3 download.py -p EURUSD -t All
+    python3 download.py -p EURUSD -t All    
 """
 
 import os
