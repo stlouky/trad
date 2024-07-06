@@ -13,7 +13,7 @@ Instalace nástrojů:
     pip install selenium requests webdriver_manager
 
 Použití:
-  python3 download.py -p MĚNOVÝ_PÁR -t ČASOVÝ_RÁMEC
+  python3 forex_data_downloader.py -p MĚNOVÝ_PÁR -t ČASOVÝ_RÁMEC
 
 Parametry:
   -p, --pair       Zadejte měnový pár ve formátu EURUSD (např. EURUSD, GBPUSD)
@@ -21,10 +21,10 @@ Parametry:
 
 Příklady použití:
   Pro stažení dat měnového páru EUR/USD pro časový rámec M5:
-    python3 download.py -p EURUSD -t M5
+    python3 forex_data_downloader.py -p EURUSD -t M5
 
   Pro stažení dat měnového páru EUR/USD pro všechny časové rámce:
-    python3 download.py -p EURUSD -t All    
+    python3 forex_data_downloader.py -p EURUSD -t All    
 """
 
 import os
