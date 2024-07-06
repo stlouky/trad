@@ -1,6 +1,21 @@
-	"""
-Nápověda:
-Tento skript slouží ke stažení historických dat Forex z webu forexsb.com.
+"""
+Forex Data Downloader
+
+Tento skript stahuje historická data pro zvolený měnový pár z webu Forex Software Ltd.
+Můžete specifikovat měnový pár a časový rámec pomocí přepínačů při spuštění skriptu.
+
+Použití:
+    python3 forex_data_downloader.py -p <měnový_pár> -t <časový_rámec>
+    nebo
+    python3 forex_data_downloader.py -p <měnový_pár> -t All (pro stažení všech dostupných časových rámců)
+
+Příklad:
+    python3 forex_data_downloader.py -p EURUSD -t M5
+    python3forex_data_downloader.py -p EURUSD -t All
+
+Přepínače:
+    -p, --pair   Měnový pár, který chcete stáhnout (např. EURUSD, GBPUSD, USDJPY).
+    -t, --timeframe Časový rámec, který chcete stáhnout (např. M1, M5, M15, M30, H1, H4, D1, All).
 
 Potřebné nástroje:
     - selenium: Automatizace webového prohlížeče
@@ -10,21 +25,7 @@ Potřebné nástroje:
     - chromium-browser: Bezhlavý prohlížeč Chrome (pro Linux)
 
 Instalace nástrojů:
-    pip install selenium requests webdriver_manager
-
-Použití:
-  python3 forex_data_downloader.py -p MĚNOVÝ_PÁR -t ČASOVÝ_RÁMEC
-
-Parametry:
-  -p, --pair       Zadejte měnový pár ve formátu EURUSD (např. EURUSD, GBPUSD)
-  -t, --timeframe  Zadejte časový rámec (M1, M5, M15, M30, H1, H4, D1 nebo All)
-
-Příklady použití:
-  Pro stažení dat měnového páru EUR/USD pro časový rámec M5:
-    python3 forex_data_downloader.py -p EURUSD -t M5
-
-  Pro stažení dat měnového páru EUR/USD pro všechny časové rámce:
-    python3 forex_data_downloader.py -p EURUSD -t All    
+    pip install selenium requests webdriver_manager  
 """
 
 import os
